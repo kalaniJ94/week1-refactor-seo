@@ -11,44 +11,39 @@ body {
     background-color: #d9dcd6;
     
 }
-
-/* Need to move the UL, no idea why it's towards the left. */
-.header {
+header{
     padding: 20px;
     background-color: #2a607c;
     color: #ffffff;
     display: flex;
-    width: 100%;
-    
+    width: 100%;    
 }
 
-.header h1 {
+header h1{
     display: inline;
     flex: end;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
     font-size: 32pt;
-
 }
 
-.header div {
+nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+nav ul{
     text-align: right;
 }
 
-.header div ul li {
+nav ul li{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: auto;
 }
 
 .hero {
@@ -59,7 +54,7 @@ body {
     background-size: cover;
     background-position: center;
 }
-/* Combine images  */
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -71,7 +66,7 @@ body {
 }
 
 
-.benefits {
+/* .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -91,50 +86,55 @@ body {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+} */
+
+aside{
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 960px;
+    background-color: #2589bd;
+    /* margin-bottom: 32px; */
+    margin-top: 0px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center; 
 }
-/* Combine all sections into .content */
-.content {
+
+aside img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;   
+}
+
+article{
     width: 75%;
     display: inline-block;
     margin-left: 20px;
     color: #ffffff;
    background-color: #0072bb;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
     padding: 50px;
     height: 300px;
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-}
 
-.content img{
+article img{
     max-height: 200px;
 }
 
-.content h2{
+article h2{
     margin-bottom: 20px;
-    font-size: 36px; 
+    font-size: 36px;
 }
 
-.footer {
+footer{
     padding: 30px;
     clear: both;
     text-align: center;
 }
-
-.footer h4 {
+footer h4{
     font-size: 20px;
 }
