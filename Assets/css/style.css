@@ -21,7 +21,6 @@ header{
 
 header h1{
     display: inline;
-    flex: end;
     font-size: 48px;
 }
 
@@ -35,15 +34,11 @@ nav{
     margin-right: 20px;
     float: right;
     font-size: 20px;
-}
-
-nav ul{
-    text-align: right;
+    
 }
 
 nav ul li{
-    display: inline-block;
-    margin-left: auto;
+     display: inline-block;  
 }
 
 .hero {
@@ -66,28 +61,6 @@ nav ul li{
 }
 
 
-/* .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 960px;
-    background-color: #2589bd;
-    margin-bottom: 32px;
-    margin-top: 0px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    text-align: center;
-    
-}
-
-.benefits img{
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
-
 aside{
     margin-right: 20px;
     padding: 20px;
@@ -96,7 +69,6 @@ aside{
     width: 20%;
     height: 960px;
     background-color: #2589bd;
-    /* margin-bottom: 32px; */
     margin-top: 0px;
     color: #ffffff;
     margin-bottom: 10px;
