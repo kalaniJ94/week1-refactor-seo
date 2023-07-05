@@ -9,17 +9,19 @@
 
 body {
     background-color: #d9dcd6;
-    
+
 }
-header{
+
+/*Header only*/
+header {
     padding: 20px;
     background-color: #2a607c;
     color: #ffffff;
     display: flex;
-    width: 100%;    
+    width: 100%;
 }
 
-header h1{
+header h1 {
     display: inline;
     font-size: 48px;
 }
@@ -29,18 +31,22 @@ header h1 .seo {
     font-size: 32pt;
 }
 
-nav{
+/*Nav links in the header*/
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: 20px;
-    
+    display: flex;
+    flex: center;
+
 }
 
-nav ul li{
-     display: inline-block;  
+nav ul li {
+    display: inline-block;
 }
 
+/*Big image in the middle*/
 .hero {
     height: 800px;
     width: 100%;
@@ -50,18 +56,8 @@ nav ul li{
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-
-aside{
+/*Aside section*/
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -72,41 +68,106 @@ aside{
     margin-top: 0px;
     color: #ffffff;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: center;
+
 }
 
-aside img{
+aside img {
     display: block;
     margin: 10px auto;
-    max-width: 150px;   
+    max-width: 150px;
 }
 
-article{
+/*Main three sections in the body of the page*/
+article {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
     color: #ffffff;
-   background-color: #0072bb;
-   margin-bottom: 20px;
+    background-color: #0072bb;
+    margin-bottom: 20px;
     padding: 50px;
     height: 300px;
 }
 
-
-article img{
-    max-height: 200px;
-}
-
-article h2{
+article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-footer{
+/*Controls the images in the articles*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+article img {
+    max-height: 200px;
+}
+
+/*Footer notes*/
+
+footer {
     padding: 30px;
     clear: both;
     text-align: center;
 }
-footer h4{
+
+footer h4 {
     font-size: 20px;
+}
+
+/*Media Queries*/
+
+/*Aside element breaks here*/
+@media screen and (min-width:824px) and (max-width: 960px) {
+    aside {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        word-wrap: break-word;
+        width: 25%;
+    }
+
+    aside img {
+        width: fit-content;
+        flex: 0 1 auto;
+    }
+
+}
+
+/*Article breaks here*/
+@media screen and (min-width: 361px) and (max-width: 885px) {
+    nav {
+        width: 50%;
+    }
+
+    header h1 {
+        width: 50%;
+    }
+
+    article {
+        word-wrap: break-word;
+    }
+
+    article img {
+        width: 25%;
+    }
+
+    aside {
+        word-wrap: break-word;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    aside img {
+        width: fit-content;
+        padding: 0px;
+        margin: 0px;
+    }
 }
