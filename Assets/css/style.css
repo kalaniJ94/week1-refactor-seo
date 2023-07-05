@@ -2,9 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', Arial, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri' , Arial,'Trebuchet MS', sans-serif;
     font-size: 16px;
     color: #ffffff;
+    text-decoration: none;
+    
 }
 
 body {
@@ -33,15 +35,15 @@ header h1 .seo {
 
 /*Nav links in the header*/
 nav {
-    padding-top: 15px;
     float: right;
     font-size: 20px;
     width: 75%;
-    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
 
 nav ul li {
     display: inline-block;
+    padding: 25px;
 }
 
 /*Big image in the middle*/
@@ -54,9 +56,10 @@ nav ul li {
     background-position: center;
 }
 
-main{
-    display: relative;
-  
+main {
+    display: inline-block;
+    width: 75%;
+
 }
 
 /*Aside section*/
@@ -75,21 +78,25 @@ aside {
 }
 
 aside img {
-    display: block;
+    display: flex;
+    flex: 0 2 auto;
     margin: 10px auto;
     max-width: 150px;
 }
 
+aside p {
+    margin-bottom: 20px;
+}
+
 /*Main three sections in the body of the page*/
 article {
-    width: 75%;
-    display: inline-block;
     margin-left: 20px;
     color: #ffffff;
     background-color: #0072bb;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    width: 80%;
 }
 
 article h2 {
@@ -97,15 +104,21 @@ article h2 {
     font-size: 36px;
 }
 
+article p {
+    font-size: auto;
+}
+
 /*Controls the images in the articles*/
 .float-left {
     float: left;
     margin-right: 25px;
+    width: 33%;
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    width: 33%;
 }
 
 article img {
@@ -126,50 +139,133 @@ footer h4 {
 
 /*Media Queries*/
 
-/*Aside element breaks here*/
-@media screen and (min-width:824px) and (max-width: 960px) {
-    aside {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        word-wrap: break-word;
-        width: 25%;
+/*Aside text breaks here*/
+@media screen and (max-width: 1070px) {
+    main{
+        width: 70%;
+    }
+    
+    aside{ 
+        width: 30%;
+        margin-right: 0;
+    }
+}
+
+/*Large Devices*/
+
+@media screen and (max-width: 992px) {
+    article {
+        margin-left: 0;
     }
 
-    aside img {
-        width: fit-content;
-        flex: 0 1 auto;
+    nav{
+        background-color: #2a607c;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1{
+       display: flex;
+       justify-content: center;
     }
 
 }
 
-/*Article breaks here*/
-@media screen and (min-width: 361px) and (max-width: 885px) {
-    nav {
-        width: 50%;
-    }
-
-    header h1 {
-        width: 50%;
-    }
-
-    article {
-        word-wrap: break-word;
-    }
-
-    article img {
-        width: 25%;
+/*Medium Devices*/
+@media screen and (max-width: 768px) {
+    main {
+        width: auto;
     }
 
     aside {
-        word-wrap: break-word;
-        margin: 0px;
-        padding: 0px;
+        display: block;
+        width: 100%;
+        float: none;
     }
 
-    aside img {
-        width: fit-content;
-        padding: 0px;
-        margin: 0px;
+    article {
+        display: block;
+        width: 100%;
+        padding: none;
+        margin: 0;
+    }
+
+    nav{
+        background-color: #2a607c;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+/*Small Devices*/
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    article {
+        display: inline-block;
+        width: 100%;
+        padding: none;
+        margin: 0;
+    }
+
+    nav{
+        background-color: #2a607c;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+/*Extra small devices*/
+
+@media screen and (max-width: 500px) {
+    aside {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    article {
+        display: block;
+        width: 100%;
+        padding: none;
+        margin: 0;
+    }
+
+    nav{
+        background-color: #2a607c;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1{
+       display: flex;
+       justify-content: center;
     }
 }
