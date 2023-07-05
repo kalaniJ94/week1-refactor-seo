@@ -17,7 +17,7 @@ header {
     padding: 20px;
     background-color: #2a607c;
     color: #ffffff;
-    display: flex;
+    display: relative;
     width: 100%;
 }
 
@@ -34,12 +34,10 @@ header h1 .seo {
 /*Nav links in the header*/
 nav {
     padding-top: 15px;
-    margin-right: 20px;
     float: right;
     font-size: 20px;
-    display: flex;
-    flex: center;
-
+    width: 75%;
+    font-style: normal;
 }
 
 nav ul li {
@@ -56,18 +54,22 @@ nav ul li {
     background-position: center;
 }
 
+main{
+    display: relative;
+  
+}
+
 /*Aside section*/
 aside {
-    margin-right: 20px;
+
     padding: 20px;
-    clear: both;
-    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
     width: 20%;
     height: 960px;
     background-color: #2589bd;
-    margin-top: 0px;
     color: #ffffff;
-    margin-bottom: 10px;
+    float: right;
     text-align: center;
 
 }
