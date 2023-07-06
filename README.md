@@ -12,17 +12,13 @@ Along the way, we learned new skills and polished old ones. I learned a lot abou
 ## Installation
 Accessing the webpage requires only an internet connection and a internet browser. I recommend Google Chrome, for it's versatility. 
 
-## Usage
-
-
 ## Credits
 
-Big thanks to Eric Sayer, University of Denver tutor for helping with the last steps. 
-
-Nomlin, for tips in the class slack channel. 
+Nomlin M , for tips in the class slack channel. They relate to lines 59-61 of style.css. 
 
 Lots of tips for media queries were found at https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
 
+Guide/tips for flexbot were found at https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 
 ## License
